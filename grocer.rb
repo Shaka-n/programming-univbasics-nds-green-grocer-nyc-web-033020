@@ -86,7 +86,7 @@ def checkout(cart, coupons)
   puts "Total Before Bulk Discount"
   puts total
   if total > 100 
-    total = total * 0.9
+    total = (total * 0.9).round(3)
   end
   puts "Final Total"
   puts total
