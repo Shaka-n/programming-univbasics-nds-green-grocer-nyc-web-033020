@@ -26,6 +26,7 @@ def consolidate_cart(cart)
       }
       new_cart << new_cart_item
     end 
+    index += 1
   end
 return new_cart
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
