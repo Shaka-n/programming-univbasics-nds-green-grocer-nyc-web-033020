@@ -69,18 +69,18 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  cart = consolidate_cart(cart)
-  cart = apply_coupons(cart, coupons)
-  cart = apply_clearance(cart)
+  cart1 = consolidate_cart(cart)
+  cart2 = apply_coupons(cart1, coupons)
+  cart3 = apply_clearance(cart2)
   index = 0 
   total = 0 
-  while index < cart.length do
+  while index < cart3.length do
     puts "Price"
-    puts cart[index][:price]
+    puts cart3[index][:price]
     puts "Count"
-    puts cart[index][:price]
-    puts (cart[index][:price] * cart[index][:count])
-    total += (cart[index][:price] * cart[index][:count])
+    puts cart3[index][:price]
+    puts (cart3[index][:price] * cart3[index][:count])
+    total += (cart3[index][:price] * cart3[index][:count])
     index += 1 
   end
   if total > 100 
