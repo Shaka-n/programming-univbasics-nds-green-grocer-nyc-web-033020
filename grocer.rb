@@ -75,7 +75,11 @@ def checkout(cart, coupons)
   index = 0 
   total = 0 
   while index < cart.length do
-    
+    puts "Price"
+    puts cart[index][:price]
+    puts "Count"
+    puts cart[index][:price]
+    puts (cart[index][:price] * cart[index][:count])
     total += (cart[index][:price] * cart[index][:count])
     index += 1 
   end
