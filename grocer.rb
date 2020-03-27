@@ -75,21 +75,12 @@ def checkout(cart, coupons)
   index = 0 
   total = 0 
   while index < cart3.length do
-    puts "Price"
-    puts cart3[index][:price]
-    puts "Count"
-    puts cart3[index][:price]
-    puts (cart3[index][:price] * cart3[index][:count])
     total += (cart3[index][:price] * cart3[index][:count])
     index += 1 
   end
-  puts "Total Before Bulk Discount"
-  puts total
   if total > 100 
     total = (total * 0.9).round(3)
   end
-  puts "Final Total"
-  puts total
   return total
   # Consult README for inputs and outputs
   #
