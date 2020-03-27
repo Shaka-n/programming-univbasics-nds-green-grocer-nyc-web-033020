@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
     coupon_index+=1 
   end
   return cart
-  # REMEMBER: This method **should** update cart
+
 end
 
 def apply_clearance(cart)
