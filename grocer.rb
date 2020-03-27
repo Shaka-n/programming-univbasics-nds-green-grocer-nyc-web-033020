@@ -27,7 +27,7 @@ def consolidate_cart(cart)
       new_cart << new_cart_item
     end 
   end
-return con_cart
+return new_cart
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 end
