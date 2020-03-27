@@ -83,9 +83,13 @@ def checkout(cart, coupons)
     total += (cart3[index][:price] * cart3[index][:count])
     index += 1 
   end
+  puts "Total Before Bulk Discount"
+  puts total
   if total > 100 
     total = total * 0.9
   end
+  puts "Final Total"
+  puts total
   return total
   # Consult README for inputs and outputs
   #
