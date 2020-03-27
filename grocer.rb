@@ -70,9 +70,11 @@ end
 
 def checkout(cart, coupons)
   con_cart = consolidate_cart(cart)
-  coupon_cart = apply_coupons(con_cart)
-  clearance_cart = apply_clearance(coupon_cart)
-  
+  coup_cart = apply_coupons(con_cart)
+  clear_cart = apply_clearance(coup_cart)
+  index = 0 
+  while index < clear_cart.length do
+    
   
   # Consult README for inputs and outputs
   #
