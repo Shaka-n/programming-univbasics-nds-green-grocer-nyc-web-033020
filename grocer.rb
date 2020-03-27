@@ -70,8 +70,14 @@ end
 
 def checkout(cart, coupons)
   con_cart = consolidate_cart(cart)
+  puts "Con_Cart"
+  pp con_cart
   coup_cart = apply_coupons(con_cart, coupons)
+  puts "Coup_Cart"
+  pp coup_cart
   final_cart = apply_clearance(coup_cart)
+  puts "Final Cart"
+  pp final_cart
   total = 0 
   index = 0 
   while index < final_cart.length do
