@@ -73,6 +73,7 @@ def checkout(cart, coupons)
   coupon_cart = apply_coupons(con_cart)
   clearance_cart = apply_clearance(coupon_cart)
   
+  
   # Consult README for inputs and outputs
   #
   # This method should call
