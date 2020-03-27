@@ -15,7 +15,7 @@ def consolidate_cart(cart)
   index = 0 
   while index < cart.length do 
     new_cart[index] = find_item_by_name_in_collection(cart[index], new_cart)
-    if con_cart[index][:count]
+    if new_cart[index][:count]
       con_cart[index][:count] += 1 
       index += 1
     else 
