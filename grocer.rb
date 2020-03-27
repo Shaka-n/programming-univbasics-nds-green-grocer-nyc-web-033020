@@ -78,6 +78,7 @@ def checkout(cart, coupons)
     total += (clear_cart[index][:price] * clear_cart[index][:count])
     index += 1 
   end
+  if total 
   
   # Consult README for inputs and outputs
   #
