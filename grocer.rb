@@ -65,6 +65,7 @@ def apply_clearance(cart)
     else
       index += 1
     end
+  end
    return clearance_cart
 end
 
