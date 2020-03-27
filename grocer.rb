@@ -18,7 +18,7 @@ def consolidate_cart(cart)
     if new_cart[index] != nil
       con_cart[index][:count] += 1 
     else 
-      new
+      new_cart
     end 
   end
 return con_cart
