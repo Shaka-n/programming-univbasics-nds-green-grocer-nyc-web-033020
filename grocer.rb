@@ -73,18 +73,15 @@ def checkout(cart, coupons)
   if coupons
     cart = apply_coupons(con_cart, coupons)
   end
-  clear_index = 0
-  while clear_index < cart.length do
-    
-  clear_cart = apply_clearance(coup_cart)
+  cart = apply_clearance(coup_cart)
   index = 0 
   total = 0 
-  while index < clear_cart.length do
+  while index < cart.length do
     puts "Price"
-    puts clear_cart[index][:price]
+    puts cart[index][:price]
     puts "Count"
-    puts clear_cart[index][:price]
-    total += (clear_cart[index][:price] * clear_cart[index][:count])
+    puts cart[index][:price]
+    total += (cart[index][:price] * cart[index][:count])
     index += 1 
   end
   if total > 100 
