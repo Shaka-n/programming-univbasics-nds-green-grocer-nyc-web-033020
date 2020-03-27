@@ -75,7 +75,9 @@ def checkout(cart, coupons)
   index = 0 
   total = 0 
   while index < clear_cart.length do
-    total += clear_cart
+    total += (clear_cart[index][:price] * clear_cart[index][:count])
+    index += 1 
+  end
   
   # Consult README for inputs and outputs
   #
