@@ -57,21 +57,15 @@ end
 
 def apply_clearance(cart)
   index = 0 
-  clearance_cart = []
   while index < cart.length do 
     if cart[index][:clearance] == true
-      puts "Item Price: "
-      puts cart[index][:price]
-      cart[index][:price] = cart[index][:price] * 0.8
-      cart[index][:price] = cart[index][:price].round(2)
-      puts "New Item Price:"
-      puts cart[index][:price]
+      cart[index][:price] = (cart[index][:price] * 0.8).round(2)
       index += 1
     else
       index += 1
     end
   end
-   return clearance_cart
+   return cart
 end
 
 def checkout(cart, coupons)
