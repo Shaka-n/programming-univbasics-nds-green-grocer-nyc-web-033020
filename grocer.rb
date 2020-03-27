@@ -62,7 +62,7 @@ def apply_clearance(cart)
     if cart[index][:clearance] == true
       puts "Item Price: "
       puts cart[index][:price]
-      cart[index][:price] = (cart[index][:price] * 0.8).round()
+      cart[index][:price] = (cart[index][:price] * 0.8).round(1)
       puts "New Item Price:"
       puts cart[index][:price]
       index += 1
